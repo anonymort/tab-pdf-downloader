@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tab PDF Downloader</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      width: 300px;
+      margin: 0;
+      padding: 20px;
+      background-color: #f0f4f8;
+    }
+    .container {
+      background-color: white;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    h1 {
+      font-size: 24px;
+      margin: 0 0 10px;
+      color: #2c3e50;
+      text-align: center;
+    }
+    .title-link {
+      text-decoration: none;
+      color: inherit;
+      transition: text-decoration 0.3s ease;
+    }
+    .title-link:hover {
+      text-decoration: underline;
+    }
+    h2 {
+      font-size: 14px;
+      color: #7f8c8d;
+      margin: 0 0 20px;
+      text-align: center;
+    }
+    #downloadButton {
+      width: 100%;
+      padding: 12px;
+      background-color: #3498db;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s, transform 0.1s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #downloadButton:hover {
+      background-color: #2980b9;
+      transform: translateY(-2px);
+    }
+    #downloadButton::before {
+      content: "⬇️";
+      margin-right: 8px;
+    }
+    .footer {
+      margin-top: 20px;
+      font-size: 12px;
+      color: #95a5a6;
+      text-align: center;
+    }
+    .coffee-button {
+      display: block;
+      margin-top: 10px;
+      transition: transform 0.1s;
+    }
+    .coffee-button:hover {
+      transform: scale(1.05);
+    }
+    .matt-link {
+      color: #000000;
+      text-decoration: none;
+      transition: text-decoration 0.3s ease;
+    }
+    .matt-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1><a href="https://www.github.com/anonymort/tab-pdf-downloader" class="title-link">Tab PDF Downloader</a></h1>
+    <h2>Version 1.0</h2>
+    <button id="downloadButton">Download All PDF Tabs</button>
+    <div class="footer">
+      Created by <a href="https://www.twitter.com/drmattuk" class="matt-link" target="_blank">Matt Kneale</a>
+      <a href="https://www.buymeacoffee.com/mattkneale" class="coffee-button" target="_blank">
+        <img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee?&emoji=&slug=mattkneale&button_colour=FFDD00&font_colour=000000&font_family=Bree&outline_colour=000000&coffee_colour=ffffff" alt="Buy me a coffee" style="width: 100%; max-width: 180px;">
+      </a>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

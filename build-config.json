@@ -1,0 +1,12 @@
+{
+  "browsers": [
+    {
+      "name": "chromium",
+      "compatibleBrowsers": ["chrome", "edge", "vivaldi", "opera", "brave", "kiwi", "yandex", "ucbrowser", "samsung-internet"]
+    },
+    {
+      "name": "firefox",
+      "compatibleBrowsers": ["firefox", "tor"]
+    }
+  ]
+}
